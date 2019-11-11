@@ -66,6 +66,28 @@ p {
     line-height: 1.4;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+			animation: color 2s;
+			animation-fill-mode: forwards;
+}
+
+@keyframes color {
+		50% {
+			color: #660000;
+		}
+		100% {
+			color: red;
+			font-weight: bold;
+	  }
+}
+
+}
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -86,8 +108,6 @@ header nav .nav-items {
 }
 
 header nav a {
-	text-decoration: none;
-	color: black;
 	margin: 20px 40px 20px 40px;
 	padding: 20px 0px 0px 0px;
 }
